@@ -41,28 +41,21 @@ const NavBar = () => {
             className={` w-full py-[15px] sticky  ${isSticky ? "top-0 bg-white shadow-md" : "transition-all"} `}
         >
             <Container className='flex justify-between items-center'>
-                <Link href={'/'} className='hidden lg:block'>
+                <Link href={'/'}>
                     <Image
                         alt='logo'
                         src={Logo}
                         height={72.3}
                         width={70}
+                        className='h-10 w-[41.3px] md:h-[72.3px] md:w-[70px]'
                     />
                 </Link>
-                <Link href={'/'} className='lg:hidden'>
-                    <Image
-                        alt='logo'
-                        src={Logo}
-                        height={40}
-                        width={41.3}
-                    />
-                </Link>
-                <div className="hidden lg:flex gap-4 text-xl">
+                <div className="hidden md:flex gap-4 lg:text-xl">
                     <Link href={'/'}><p className={`p-4 ${pathname === ("/") ? "text-primary" : ""}`}>Home</p></Link>
                     <Link href={'/blog'}><p className={`p-4 ${pathname === ("/blog") ? "text-primary" : ""}`}>Blog</p></Link>
                     <Link href={'/contact-us'}><p className={`p-4 ${pathname === ("/contact-us") ? "text-primary" : ""}`}>Contact Us</p></Link>
                 </div>
-                <Hamburger className='lg:hidden' />
+                <Hamburger className='md:hidden' />
             </Container>
         </nav>
     )
