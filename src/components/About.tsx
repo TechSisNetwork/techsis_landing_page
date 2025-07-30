@@ -5,30 +5,30 @@ import AboutImage from '../../public/girl.png';
 
 const About = () => {
   return (
-    <section className="w-full min-h-screen flex items-center justify-between pt-10 lg:pt-0">
-      <Container className="flex flex-col lg:flex-row items-center lg:items-end gap-[38.11px]">
-        <div className="relative  h-full  flex flex-col justify-center items-center flex-shrink-0">
-          <div className=" -z-50 size-56  bg-[#4d609e] rounded-full " />
+    <section className="w-full flex items-center justify-between py-20 md:py-34 bg-[#FFE1E817]">
+      <Container className="grid lg:grid-cols-2 gap-[38.11px]">
+        <div className="relative  h-full  flex flex-col justify-center items-center lg:justify-end lg:items-start flex-shrink-0">
+          <div className=" -z-50 size-50 lg:size-100  bg-[#4d609e] rounded-full " />
 
           <Image
             src={AboutImage}
             alt="Young woman with laptop"
-            width={300}
-            height={300}
-            className="absolute  -right-10 -z-10 object-contain lg:left-20"
+            width={570}
+            height={855}
+            className="absolute -bottom-20 -right-8 md:right-30 lg:-right-10 lg:-bottom-40 -z-10 object-contain lg:left-20 w-[292px] h-[438px] lg:w-[570px] lg:h-[855px]"
             priority
           />
         </div>
 
         
-        <div className="flex-1 flex flex-col items-center lg:items-start gap-10 lg:gap-[50px] pb-[22.5px] lg:ml-100">
+        <div className="flex-1 flex flex-col items-center lg:items-start gap-10 lg:gap-[50px]">
           <div className="flex flex-col gap-4 lg:gap-5 text-center lg:text-start">
             <h2 className="font-bold text-2xl flexg md:text-4xl lg:text-5xl text-[#2B2B2B] leading-[100%] tracking-[0px]">
               <span className="inline-block ">Breaking Barriers,</span>
               <span className="inline-block pr-10">Sharing Knowledge,</span>
               <br />
               <span className="inline-block pr-0">and Building the</span>
-              <br />
+              <br className='hidden lg:block' />
               <span className="inline-block pr-10">Future Together.</span>
             </h2>
             <p className="text-sm lg:text-xl text-[#606060]">
