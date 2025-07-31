@@ -5,7 +5,7 @@ import AboutImage from '../../public/girl.png';
 
 const About = () => {
   return (
-    <section className="w-full flex items-center justify-between py-20 md:py-34 bg-[#FFE1E817]">
+    <section id='about' className="w-full flex items-center justify-between py-20 md:py-34 bg-[#FFE1E817]">
       <Container className="grid lg:grid-cols-2 gap-[38.11px]">
         <div className="relative  h-full  flex flex-col justify-center items-center lg:justify-end lg:items-start flex-shrink-0">
           <div className=" -z-50 size-50 lg:size-100  bg-[#4d609e] rounded-full " />
