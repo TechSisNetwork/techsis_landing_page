@@ -38,7 +38,7 @@ const NavBar = () => {
     return (
         <nav
             ref={navRef}
-            className={` w-full py-[15px] sticky  ${isSticky ? "top-0 bg-white shadow-md" : "transition-all"} `}
+            className={` w-full py-[15px] sticky z-50 ${isSticky ? "top-0 bg-white shadow-md" : "transition-all"} `}
         >
             <Container className='flex justify-between items-center'>
                 <Link href={'/'}>

@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Hero from "@/components/Hero";
+import Internship from "@/components/Internship/Internship";
 import Podcast from "@/components/Podcast";
 
 
@@ -8,7 +9,8 @@ export default function Home() {
     <main className="w-screen overflow-hidden">
       <Hero />
       <About />
-      <Podcast/>
+      <Internship />
+      <Podcast />
     </main>
   );
 }
