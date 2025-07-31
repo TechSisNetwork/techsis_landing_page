@@ -14,7 +14,7 @@ const FooterMain = () => {
         <section className='w-full bg-[url(../../public/footer-main.jpg)] bg-cover'>
             <div className="bg-[#000000CC] text-white h-full w-full pt-[50px] lg:pt-[100px] ">
                 <Container className='flex flex-col lg:text-xl'>
-                    <div className="flex flex-col-reverse md:items-center lg:items-start lg:flex-row gap-[50px] lg:gap-[134px]">
+                    <div className="flex flex-col-reverse md:items-center lg:items-start lg:flex-row gap-[50px] xl:gap-[134px]">
                         <div className="flex flex-col gap-[50px]">
                             <div className="flex flex-col gap-[30px]">
                                 <h3 className='font-bold lg:font-semibold text-2xl lg:text-[28px]'>Contact</h3>
@@ -32,8 +32,8 @@ const FooterMain = () => {
                                 <Link href={'https://www.tiktok.com/@techsisnetwork'} target='blank'><Tiktok/></Link>
                             </div>
                         </div>
-                        <div className="flex flex-col-reverse md:flex-row gap-10 md:gap-15 lg:gap-[150px]">
-                            <div className="flex flex-col-reverse md:flex-row gap-[50px] lg:gap-[135px]">
+                        <div className="flex flex-col-reverse md:flex-row gap-10 md:gap-15 lg:gap-24 xl:gap-[150px]">
+                            <div className="flex flex-col-reverse md:flex-row gap-[50px] xl:gap-[135px]">
                                 <div className="flex flex-col gap-[30px]">
                                     <h3 className='font-bold lg:font-semibold text-2xl lg:text-[28px]'>Company</h3>
                                     <ul className="flex flex-col gap-5">
@@ -54,7 +54,7 @@ const FooterMain = () => {
                                     </ul>
                                 </div>
                             </div>
-                            <Image src={Logo} alt='logo' width={130.1} height={126} className='w-[82.6px] h-[80px] lg:w-[130.1px] lg:h-[126px]' />
+                            <Image src={Logo} alt='logo' width={130.1} height={126} className='w-[82.6px] h-[80px] xl:w-[130.1px] xl:h-[126px]' />
                         </div>
                     </div>
                     <div className="border-t border-[#5C5A5A] py-6 lg:py-[50.5px] mt-[150px] text-xs lg:text-base">
