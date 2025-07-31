@@ -5,7 +5,7 @@ import Podcast from "@/components/Podcast";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="w-screen overflow-hidden">
       <Hero />
       <About />
       <Podcast/>
