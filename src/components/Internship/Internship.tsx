@@ -50,7 +50,7 @@ const Internship = () => {
             },
         ]
     return (
-        <section id='intership' className="w-full py-20 md:py-34 bg-[]">
+        <section id='internship' className="w-full py-20 md:py-34 bg-[]">
             <Container className='flex flex-col gap-10 lg:gap-[79px]'>
                 <div className="flex flex-col items-center text-center gap-10 lg:gap-[60px]">
                     <div className="flex flex-col gap-4 lg:gap-5">
