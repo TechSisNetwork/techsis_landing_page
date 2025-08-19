@@ -9,6 +9,7 @@ import BusinessAnalylsisIcon from '../icons/BusinessAnalylsis'
 import InternshipCard from './InternshipCard'
 import TechnicalWritingCardIcon from '../icons/TechnicalWritingCard'
 import ProjectManagmentCardIcon from '../icons/ProjectManagmentCard'
+import Link from 'next/link'
 
 const Internship = () => {
     const intershipDetails =
@@ -62,7 +63,12 @@ const Internship = () => {
                             We provide students and recent graduates with hands- on experience in their field of study.
                         </p>
                     </div>
-                    <Button variant='outlined' text={'Learn More'} className='px-[43.5px]' />
+                    <div className="flex flex-col items-center gap-2">
+                        <p className="text-sm lg:text-xl text-[#606060]">
+                            Join Techsis network Internship 2.0
+                        </p>
+                        <Link href={"https://docs.google.com/forms/d/e/1FAIpQLSeSLpiEx6IXZlqaiO0M_GH8uLuZM9Li4A--avHDor1KHIc9bA/viewform"} target='__blank'><Button variant='outlined' text={'Register'} className='px-[43.5px]' /></Link>
+                    </div>
                 </div>
                 <div className="hidden md:flex flex-col gap-4">
                     <div className="grid grid-cols-3 gap-4">

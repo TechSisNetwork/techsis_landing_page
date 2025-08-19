@@ -4,6 +4,7 @@ import Container from './Container'
 import Image from 'next/image'
 import HeroImg from "../../public/hero-image.png"
 import Portriats from "../../public/portraits.png"
+import Link from 'next/link'
 
 const Hero = () => {
     return (
@@ -19,7 +20,7 @@ const Hero = () => {
                             journey matters here.<br className='hidden md:block lg:hidden'/> Join us in creating a more inclusive and innovative tech industry!
                         </p>
                     </div>
-                    <Button className='px-[43px] lg:px-[50px]' text={"Get Started"} />
+                    <Link href={"https://docs.google.com/forms/d/e/1FAIpQLSeSLpiEx6IXZlqaiO0M_GH8uLuZM9Li4A--avHDor1KHIc9bA/viewform"} target='__blank'><Button className='px-[43px] lg:px-[50px]' text={"Get Started"} /></Link>
 
                     <div className="flex gap-2.5">
                         <Image alt='portiats' height={25} width={70} src={Portriats} />
