@@ -52,8 +52,8 @@ const NavBar = () => {
                 </Link>
                 <div className="hidden md:flex gap-4 lg:text-xl">
                     <Link href={'/'}><p className={`p-4 ${pathname === ("/") ? "text-primary" : ""}`}>Home</p></Link>
-                    <Link href={'/blog'}><p className={`p-4 ${pathname === ("/blog") ? "text-primary" : ""}`}>Blog</p></Link>
-                    <Link href={'/contact-us'}><p className={`p-4 ${pathname === ("/contact-us") ? "text-primary" : ""}`}>Contact Us</p></Link>
+                    <Link href={'#'}><p className={`p-4 ${pathname === ("/blog") ? "text-primary" : ""}`}>Blog</p></Link>
+                    <Link href={'#'}><p className={`p-4 ${pathname === ("/contact-us") ? "text-primary" : ""}`}>Contact Us</p></Link>
                 </div>
                 <Hamburger className='md:hidden' />
             </Container>
