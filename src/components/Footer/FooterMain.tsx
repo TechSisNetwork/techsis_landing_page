@@ -20,7 +20,7 @@ const FooterMain = () => {
                                 <h3 className='font-bold lg:font-semibold text-2xl lg:text-[28px]'>Contact</h3>
                                 <ul className="flex flex-col gap-5">
                                     <li className='max-w-[295px]'>Graham Douglas Drive Rumuibekwe Estate, Port-harcourt.</li>
-                                    <li><Link href={'tel:+2347047221018'}>Tel: +234 704 722 1018</Link></li>
+                                    <li><Link href={'https://wa.me/2347047221018'}>Whatsapp: +234 704 722 1018</Link></li>
                                     <li><Link href={'mailto:Techsisnetwork@gmail.com'}>Techsisnetwork@gmail.com</Link></li>
                                 </ul>
                             </div>
