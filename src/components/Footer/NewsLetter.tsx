@@ -64,7 +64,7 @@ const NewsLetter = () => {
         },
     })
     return (
-        <section id='newsletter' className='w-screen  bg-[url(../../public/news-letter.jpg)] bg-cover bg-center '>
+        <section id='newsletter' className='w-full  bg-[url(../../public/news-letter.jpg)] bg-cover bg-center '>
             <div className="bg-[#000000CC] text-[#F5F5F5] h-full w-full py-[100px] px-5 flex flex-col items-center gap-10 lg:gap-20">
                 <div className="flex flex-col items-center gap-4">
                     <h3 className="font-bold text-2xl md:text-3xl lg:text-4xl  xl:text-[54px] leading-[100%] tracking-[0px]">Don’t Be the last to Know</h3>

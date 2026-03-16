@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistMontserrat.className} antialiased bg-[#FFFEFE]`}
+        className={`${geistMontserrat.className} scroll-container flex flex-col w-full antialiased bg-[#FFFEFE]`}
       >
         <NavBar/>
         {children}

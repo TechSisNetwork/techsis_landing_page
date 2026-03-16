@@ -29,3 +29,35 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  display: inline;
+  border-radius: 100vmax;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFFEFE;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FC6286;
+  border-radius: 3px;
+  border: 1px solid #FC6286;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FC6286;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
