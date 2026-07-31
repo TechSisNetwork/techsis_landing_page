@@ -7,18 +7,11 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import Hamburger from './icons/Hamburger'
 
-const debounce = (func: (...args: []) => void, wait: number) => {
-    let timeout: NodeJS.Timeout;
-    return (...args: []) => {
-        clearTimeout(timeout);
-        timeout = setTimeout(() => func(...args), wait);
-    };
-};
-
 const NavBar = () => {
     const pathname = usePathname()
     const navRef = useRef<HTMLDivElement>(null);
     const [isSticky, setIsSticky] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
     const handleScroll = () => {
         if (navRef.current) {
@@ -27,18 +20,24 @@ const NavBar = () => {
         }
     };
 
-    const debouncedHandleScroll = debounce(handleScroll, 200);
-
     useEffect(() => {
         handleScroll();
-        window.addEventListener("scroll", debouncedHandleScroll);
-        return () => window.removeEventListener("scroll", debouncedHandleScroll);
-    }, [debouncedHandleScroll]);
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    const links = [
+        { label: 'Home', href: '/' },
+        { label: 'About us', href: '/about-us' },
+        { label: 'Internship', href: '/internship' },
+        { label: 'Blog', href: '/blog' },
+        { label: 'Contact Us', href: '/contact-us' },
+    ];
 
     return (
         <nav
             ref={navRef}
-            className={` w-full py-[15px] sticky z-50 ${isSticky ? "top-0 bg-white shadow-md" : "transition-all"} `}
+            className={`relative w-full py-3 z-50 bg-white ${isSticky ? "sticky top-0 shadow-sm" : ""}`}
         >
             <Container className='flex justify-between items-center'>
                 <Link href={'/'}>
@@ -47,16 +46,20 @@ const NavBar = () => {
                         src={Logo}
                         height={72.3}
                         width={70}
-                        className='h-10 w-[41.3px] md:h-[72.3px] md:w-[70px]'
+                        className='h-11 w-11 object-contain'
                     />
                 </Link>
-                <div className="hidden md:flex gap-4 lg:text-xl">
-                    <Link href={'/'}><p className={`p-4 ${pathname === ("/") ? "text-primary" : ""}`}>Home</p></Link>
-                    <Link href={'#'}><p className={`p-4 ${pathname === ("/blog") ? "text-primary" : ""}`}>Blog</p></Link>
-                    <Link href={'#'}><p className={`p-4 ${pathname === ("/contact-us") ? "text-primary" : ""}`}>Contact Us</p></Link>
+                <div className="hidden md:flex items-center gap-3 text-sm">
+                    {links.map(link => (
+                        <Link key={link.href} href={link.href} className={`px-3 py-2 transition-colors hover:text-primary ${pathname === link.href ? "text-primary font-semibold" : ""}`}>{link.label}</Link>
+                    ))}
+                    <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeSLpiEx6IXZlqaiO0M_GH8uLuZM9Li4A--avHDor1KHIc9bA/viewform" target="_blank" className="ml-2 rounded-xl bg-primary px-7 py-3 text-white">Join our Community</Link>
                 </div>
-                <Hamburger className='md:hidden' />
+                <button className="md:hidden" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle navigation"><Hamburger /></button>
             </Container>
+            {isOpen && <div className="absolute top-full left-0 right-0 bg-white shadow-lg px-5 py-4 md:hidden">
+                {links.map(link => <Link onClick={() => setIsOpen(false)} key={link.href} href={link.href} className="block border-b border-gray-100 py-3">{link.label}</Link>)}
+            </div>}
         </nav>
     )
 }
