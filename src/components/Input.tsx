@@ -60,17 +60,18 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
           </label>
         )}
         <div
-          className={`${
-            type == "checkbox" || type == "radio"
-              ? "flex"
-              : "flex items-center gap-1 rounded-md px-4 py-3 bg-white border border-[#BCBBBB]"
-          } ${className}  ${error ? "border-red-300" : "border-gray-300"} ${
-            disabled ? "!bg-gray-100 !border-gray-300 " : ""
-          }`}
+          className={className}
+          // className={`${
+          //   type == "checkbox" || type == "radio"
+          //     ? "flex"
+          //     : "flex items-center gap-1 rounded-md px-4 py-3 bg-white border border-[#BCBBBB]"
+          // } ${className}  ${error ? "border-red-300" : "border-gray-300"} ${
+          //   disabled ? "!bg-gray-100 !border-gray-300 " : ""
+          // }`}
         >
           {leftIcon && <>{leftIcon}</>}
           <input
-            type={"text"}
+            type={type}
             name={name}
             ref={ref}
             id={name}

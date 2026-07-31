@@ -77,18 +77,19 @@ const NewsLetter = () => {
                             onChange={formik.handleChange}
                             name='email'
                             placeholder='Enter Your Email Address'
-                            className='rounded-r-none text-gray-700 !p-0 overflow-hidden  border-none'
+                            className='text-gray-700 overflow-hidden'
                             error={formik.touched.email ? formik.errors.email : ""}
                             disabled={isLoading}
-                            inputClassName='h-10 lg:h-[64px] px-8  text-xs lg:text-base' />
+                            inputClassName='h-10 lg:h-[60px] w-full rounded-md !rounded-r-none border px-8 text-xs lg:text-base'
+                            />
                         <Button
                             disabled={isLoading}
-                            text={"Suscribe"}
+                            text={"Subscribe"}
                             isLoading={isLoading}
                             type="submit"
-                            className='rounded-l-none border-transparent rounded-md w-[121px] lg:w-[201px] text-xs h-10 lg:h-[64px]' />
+                            className='rounded-l-none border-transparent rounded-md w-[121px] lg:w-[201px] text-xs h-10 lg:h-[60px]' />
                     </form>
-                    <p className="font-bold text-xs lg:text-sm">{isSuccess && <span className='text-green-600'>Sucessfully suscribed!</span>} {isError && <span className='text-red-600'>failed to suscribed please try again later!</span>}</p>
+                    <p className="font-bold text-xs lg:text-sm">{isSuccess && <span className='text-green-600'>Successfully subscribed!</span>} {isError && <span className='text-red-600'>Failed to subscribe. Please try again later!</span>}</p>
                 </div>
             </div>
         </section>

@@ -2,6 +2,7 @@ import About from "@/components/About";
 import Hero from "@/components/Hero";
 import Internship from "@/components/Internship/Internship";
 import Podcast from "@/components/Podcast";
+import { SuccessStories } from "@/components/SharedSections";
 
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <About />
       <Internship />
+      <SuccessStories />
       <Podcast />
     </main>
   );
