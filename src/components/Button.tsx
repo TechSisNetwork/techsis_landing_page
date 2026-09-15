@@ -31,7 +31,7 @@ const Button = ({ type,
   return (
     <button
       type={type}
-      className={`flex py-3 lg:py-5  px-6 items-center outline-none justify-center gap-2 w-full  rounded-[15px]  border-2 text-sm lg:text-[20px] leading-[22.7px] font-medium cursor-pointer tracking-[-0.03em] ${ButtonVariant[variant]} ${className}`}
+      className={`flex py-3 lg:py-5  px-6 items-center outline-none justify-center gap-2 w-full  rounded-[15px]  border-2 text-base lg:text-lg leading-[22.7px] font-medium cursor-pointer tracking-[-0.03em] ${ButtonVariant[variant]} ${className}`}
       onClick={onClick}
       disabled={disabled || isLoading}
     >

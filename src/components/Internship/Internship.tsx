@@ -55,16 +55,16 @@ const Internship = () => {
             <Container className='flex flex-col gap-10 lg:gap-[79px]'>
                 <div className="flex flex-col items-center text-center gap-10 lg:gap-[60px]">
                     <div className="flex flex-col gap-4 lg:gap-5">
-                        <h2 className="font-bold text-2xl flexg md:text-4xl lg:text-5xl text-[#2B2B2B] leading-[100%] tracking-[0px]">
+                        <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl text-[#2B2B2B] leading-[100%] tracking-[0px]">
                             Jumpstart Your Career in Tech
                         </h2>
-                        <p className="text-sm lg:text-xl text-[#606060]">
+                        <p className="text-base lg:text-lg text-[#606060]">
                             Internships can be a valuable way to gain practical skills, build a professional network, and enhance your resume.
                             We provide students and recent graduates with hands- on experience in their field of study.
                         </p>
                     </div>
                     <div className="flex flex-col items-center gap-2">
-                        <p className="text-sm lg:text-xl text-[#606060]">
+                        <p className="text-base lg:text-lg text-[#606060]">
                             Join Techsis network Internship 2.0
                         </p>
                         <Link href={"https://docs.google.com/forms/d/e/1FAIpQLSeSLpiEx6IXZlqaiO0M_GH8uLuZM9Li4A--avHDor1KHIc9bA/viewform"} target='__blank'><Button variant='outlined' text={'Register'} className='px-[43.5px]' /></Link>

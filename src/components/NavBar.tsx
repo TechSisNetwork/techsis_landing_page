@@ -49,7 +49,7 @@ const NavBar = () => {
                         className='h-11 w-11 object-contain'
                     />
                 </Link>
-                <div className="hidden md:flex items-center gap-3 text-sm">
+                <div className="hidden md:flex items-center gap-3 text-base">
                     {links.map(link => (
                         <Link key={link.href} href={link.href} className={`px-3 py-2 transition-colors hover:text-primary ${pathname === link.href ? "text-primary font-semibold" : ""}`}>{link.label}</Link>
                     ))}
