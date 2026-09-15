@@ -8,7 +8,6 @@ import Instagram from '../icons/Instagram'
 import Facebook from '../icons/Facebook'
 import Tiktok from '../icons/Tiktok'
 import LinkedInIcon from '../icons/Linkedln-icon'
-
 const FooterMain = () => {
     return (
         <section className='w-full bg-[url(../../public/footer-main.jpg)] bg-cover'>
