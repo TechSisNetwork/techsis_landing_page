@@ -25,7 +25,7 @@ const Podcast = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#2B2B2B] leading-tight">
             Bold Voices in Tech<br />and Leadership!
           </h2>
-          <p className="text-[#606060]  text-base lg:text-xl">
+          <p className="text-[#606060] text-base lg:text-lg">
             Keep up with everything tech and women empowerment with<br />
             <span>
               Ofure on <span className="text-primary font-semibold">&apos;UNSCRIPTED AND UNCHARTED&apos;</span> podcast.

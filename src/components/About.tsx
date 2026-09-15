@@ -23,7 +23,7 @@ const About = () => {
         
         <div className="flex-1 flex flex-col items-center lg:items-start gap-10 lg:gap-[50px]">
           <div className="flex flex-col gap-4 lg:gap-5 text-center lg:text-start">
-            <h2 className="font-bold text-2xl flexg md:text-4xl lg:text-5xl text-[#2B2B2B] leading-[100%] tracking-[0px]">
+            <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl text-[#2B2B2B] leading-[100%] tracking-[0px]">
               <span className="inline-block ">Breaking Barriers,</span>
               <span className="inline-block pr-10">Sharing Knowledge,</span>
               <br />
@@ -31,11 +31,11 @@ const About = () => {
               <br className='hidden lg:block' />
               <span className="inline-block pr-10">Future Together.</span>
             </h2>
-            <p className="text-sm lg:text-xl text-[#606060]">
+            <p className="text-base lg:text-lg text-[#606060]">
               <span className="text-primary font-semibold">TechSis Network</span> is a dynamic and innovative organization dedicated to closing the gender gap in the tech workforce.<br className='hidden md:block lg:hidden'/>
               Focused on empowering women, TechSis Network provides hands-on experience through collaborative live projects in the software development lifecycle.
             </p>
-            <p className="text-sm lg:text-xl text-[#606060]">
+            <p className="text-base lg:text-lg text-[#606060]">
               We also provide consulting services for small and medium-sized businesses, helping them improve processes and implement tech solutions.<br className='hidden md:block lg:hidden'/>
               With a goal to empower 500 females in its first year.
             </p>
