@@ -3,9 +3,9 @@ import Link from "next/link";
 import Container from "@/components/Container";
 
 const packages = [
-  ["Bronze Category","Perfect for beginners, the Bronze category focuses on building your foundation. Ideal for Business Analysts, Product Managers, Designers and Developers who are just starting out and want to sharpen their skills.","3–6 Months / ₦50 per annum","Sign Up for Individual Project Mentorship"],
-  ["Silver Category","Designed for Product Managers, Business Analysts, Designers, and Developers who want to practice teamwork while growing their portfolios.","6 Months / ₦80 per annum","Sign Up for Collaborative Project Mentorship"],
-  ["Gold Category","Perfect for professionals who would like to take the leap into professional work experience. Includes live projects with real deliverables and mentorship.","6–12 Months / ₦100 per annum","Sign Up for Live Project Mentorship"],
+  ["Bronze Category","Perfect for beginners, the Bronze category focuses on building your foundation. Ideal for Business Analysts, Product Managers, Designers and Developers who are just starting out and want to sharpen their skills.","3–6 Months / $50 per annum","Sign Up for Individual Project Mentorship"],
+  ["Silver Category","Designed for Product Managers, Business Analysts, Designers, and Developers who want to practice teamwork while growing their portfolios.","6 Months / $80 per annum","Sign Up for Collaborative Project Mentorship"],
+  ["Gold Category","Perfect for professionals who would like to take the leap into professional work experience. Includes live projects with real deliverables and mentorship.","6–12 Months / $100 per annum","Sign Up for Live Project Mentorship"],
 ];
 
 const applicantsLeft = [
